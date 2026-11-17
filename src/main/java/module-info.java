@@ -1,16 +1,12 @@
 module org.example.trabajofinal {
     requires javafx.controls;
-    requires javafx.fxml;
-    requires javafx.web;
 
-    requires org.controlsfx.controls;
-    requires com.dlsc.formsfx;
-    requires net.synedra.validatorfx;
-    requires org.kordamp.ikonli.javafx;
-    requires org.kordamp.bootstrapfx.core;
-    requires eu.hansolo.tilesfx;
-    requires com.almasb.fxgl.all;
+    opens cinemauq.gui to javafx.graphics;
 
-    opens cinemauq to javafx.fxml;
     exports cinemauq;
+    exports cinemauq.gui;
+    exports cinemauq.model;
+    exports cinemauq.enums;
+    exports cinemauq.excepciones;
+    exports cinemauq.util;
 }

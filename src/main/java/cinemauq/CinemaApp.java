@@ -1,47 +1,50 @@
 package cinemauq;
 
+import cinemauq.gui.AdministradorView;
+import cinemauq.gui.LoginView;
+import cinemauq.gui.OperarioView;
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+/**
+ * Arranca la aplicacion y cambia entre las pantallas de la interfaz.
+ */
 public class CinemaApp extends Application {
-    public static Stage mainStage;
-    public static Scene sceneInicio;
-    public static Scene sceneOperario;
-    public static Scene sceneAdministrador;
+
+    private static Stage ventanaPrincipal;
 
     @Override
-    public void start(Stage stage) throws Exception {
-        mainStage = stage;
-
-        ModelFactory.getInstance();
-
-        var inicioUrl= CinemaApp.class.getResource("inicio.fxml");
-        var operarioUrl = CinemaApp.class.getResource("operario.fxml");
-        var administradorUrl = CinemaApp.class.getResource("administrador.fxml");
-
-
-        sceneInicio = new Scene(FXMLLoader.load(inicioUrl));
-        sceneOperario = new Scene(FXMLLoader.load(operarioUrl));
-        sceneAdministrador = new Scene(FXMLLoader.load(administradorUrl));
-
-        goToInicio();
-        mainStage.show();
+    public void start(Stage stage) {
+        ventanaPrincipal = stage;
+        mostrarLogin();
+        ventanaPrincipal.show();
     }
 
-    public static void goToInicio() {
-        mainStage.setScene(sceneInicio);
-        mainStage.setTitle("Iniciar sesión");
+    // Muestra la ventana de inicio de sesion
+    public static void mostrarLogin() {
+        LoginView vistaLogin = new LoginView();
+        Scene escena = new Scene(vistaLogin, 340, 280);
+        ventanaPrincipal.setScene(escena);
+        ventanaPrincipal.setTitle("CINEMAUQ - Iniciar Sesión");
+        ventanaPrincipal.centerOnScreen();
     }
 
-    public static void goToOperario() {
-        mainStage.setScene(sceneOperario);
-        mainStage.setTitle("Panel de Operario");
+    // Muestra la ventana de opciones del operario
+    public static void mostrarOperario() {
+        OperarioView vistaOperario = new OperarioView();
+        Scene escena = new Scene(vistaOperario, 650, 550);
+        ventanaPrincipal.setScene(escena);
+        ventanaPrincipal.setTitle("CINEMAUQ - Operario");
+        ventanaPrincipal.centerOnScreen();
     }
 
-    public static void goToAdministrador() {
-        mainStage.setScene(sceneAdministrador);
-        mainStage.setTitle("Panel de Administrador");
+    // Muestra la ventana de opciones del administrador
+    public static void mostrarAdministrador() {
+        AdministradorView vistaAdmin = new AdministradorView();
+        Scene escena = new Scene(vistaAdmin, 650, 600);
+        ventanaPrincipal.setScene(escena);
+        ventanaPrincipal.setTitle("CINEMAUQ - Administrador");
+        ventanaPrincipal.centerOnScreen();
     }
 }
