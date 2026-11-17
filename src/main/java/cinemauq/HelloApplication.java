@@ -1,4 +1,4 @@
-package org.example.trabajofinal;
+package cinemauq;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

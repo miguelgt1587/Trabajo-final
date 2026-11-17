@@ -11,6 +11,6 @@ module org.example.trabajofinal {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
 
-    opens org.example.trabajofinal to javafx.fxml;
-    exports org.example.trabajofinal;
+    opens cinemauq to javafx.fxml;
+    exports cinemauq;
 }
