@@ -5,4 +5,5 @@ public enum tipoCliente {
     ESTUDIANTE,
     NINO,
     ADULTO_MAYOR
+
 }
