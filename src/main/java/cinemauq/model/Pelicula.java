@@ -1,8 +1,6 @@
 package cinemauq.model;
 
-import Enums.Clasificacion;
-import Enums.EstadoPelicula;
-import Enums.Genero;
+import cinemauq.enums.*;
 
 public class Pelicula{
     private int codigo;

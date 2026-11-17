@@ -1,6 +1,6 @@
 package cinemauq.model;
 
-import Enums.TipoCliente;
+import cinemauq.enums.TipoCliente;
 
 public class Cliente {
     private String documento;
@@ -48,7 +48,7 @@ public class Cliente {
         return "Model.Cliente{" +
                 "documento='" + documento + '\'' +
                 ", nombre='" + nombre + '\'' +
-                ", tipoCliente=" + tipoCliente +
+                ", TipoCliente=" + tipoCliente +
                 '}';
     }
 }

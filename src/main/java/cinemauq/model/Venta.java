@@ -1,7 +1,7 @@
 package cinemauq.model;
 
 
-import Enums.EstadoVenta;
+import cinemauq.enums.*;
 
 import java.time.LocalDate;
 import java.time.LocalTime;

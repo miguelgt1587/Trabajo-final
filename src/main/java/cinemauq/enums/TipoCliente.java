@@ -1,6 +1,6 @@
-package cinemauq.Enums;
+package cinemauq.enums;
 
-public enum tipoCliente {
+public enum TipoCliente {
     GENERAL,
     ESTUDIANTE,
     NINO,

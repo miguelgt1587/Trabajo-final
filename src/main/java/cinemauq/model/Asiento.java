@@ -1,7 +1,7 @@
 package cinemauq.model;
 
 import java.util.Objects;
-import Enums.EstadoAsiento;
+import cinemauq.enums.EstadoAsiento;
 
     public class Asiento {
         private int codigo;
@@ -80,4 +80,3 @@ import Enums.EstadoAsiento;
         }
     }
 
-}

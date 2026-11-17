@@ -1,6 +1,6 @@
 package cinemauq.model;
 
-import Enums.TipoCliente;
+import cinemauq.enums.TipoCliente;
 
 public class Tarifa {
 
@@ -36,7 +36,7 @@ public class Tarifa {
 
     @Override
     public String toString() {
-        return "Tarifa{tipoCliente=" + tipoCliente
+        return "Tarifa{TipoCliente=" + tipoCliente
                 + ", porcentajeDescuento=" + porcentajeDescuento + "%}";
     }
 }

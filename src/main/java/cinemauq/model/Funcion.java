@@ -1,6 +1,6 @@
 package cinemauq.model;
 
-import Enums.EstadoFuncion;
+import cinemauq.enums.EstadoFuncion;
 
 import java.time.LocalDate;
 import java.time.LocalTime;

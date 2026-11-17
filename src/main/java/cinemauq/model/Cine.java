@@ -1,7 +1,7 @@
 package cinemauq.model;
 
-import Excepciones.*;
-import Enums.*;
+import cinemauq.enums.*;
+import cinemauq.excepciones.*;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -282,7 +282,7 @@ public class Cine {
         if (cliente == null) {
             throw new IllegalArgumentException("El cliente es obligatorio");
         }
-        if (codigo == null || codigo.isBlank()) {
+        if (codigo == null || codigo.trim().isEmpty()){
             throw new IllegalArgumentException("El código de venta es obligatorio");
         }
         for (Venta ventaExistente : listVenta) {

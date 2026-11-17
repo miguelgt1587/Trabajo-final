@@ -1,6 +1,6 @@
 package cinemauq.model;
 
-import Enums.EstadoSala;
+import cinemauq.enums.EstadoSala;
 
 import java.util.ArrayList;
 import java.util.Objects;

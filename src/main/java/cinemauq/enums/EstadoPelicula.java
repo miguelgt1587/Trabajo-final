@@ -1,4 +1,4 @@
-package cinemauq.Enums;
+package cinemauq.enums;
 
 public enum EstadoPelicula {
         DISPONIBLE,
